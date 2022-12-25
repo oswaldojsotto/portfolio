@@ -1,0 +1,44 @@
+.aboutme-main {
+    border-bottom: 0.3rem solid #ededed;
+    border-top: 0.3rem solid #262528;
+    background-color: #262528;
+    width: 100%;
+    height: auto;
+    color: #ededed;
+    margin-bottom: 0rem;
+    transition: 0.3s all ease-in-out;
+}
+.aboutme-main-dark {
+    border-top: 0.3rem solid #262528;
+    @extend .aboutme-main;
+    background-color: #ededed;
+    border-bottom: 0.3rem solid #262528;
+    color: #5c5c5c;
+}
+
+.aboutme-title-container {
+    margin-inline: 4rem;
+    padding-block: 1rem;
+}
+
+.aboutme-containers {
+    display: grid;
+    grid-template-columns: 58% 40%;
+    gap: 2%;
+}
+.aboutme-text-container {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-inline: 4rem;
+    margin-block: 2rem;
+}
+.aboutme-photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutme-photo {
+    width: 100%;
+}

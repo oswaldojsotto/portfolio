@@ -1,0 +1,35 @@
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  position: fixed;
+  z-index: 0;
+  height: 3rem;
+  width: 100%;
+  bottom: 0;
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px);
+}
+
+.footer-links-container {
+  margin-inline: 4rem;
+  display: flex;
+}
+
+.footer-text {
+  margin-inline: 4rem;
+  display: flex;
+}
+
+.footer-link {
+  cursor: pointer;
+  color: #5c5c5c;
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1.5rem;
+}
+
+.footer-text {
+  color: #5c5c5c;
+}/*# sourceMappingURL=footer.css.map */

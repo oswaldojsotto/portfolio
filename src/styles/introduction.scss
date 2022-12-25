@@ -1,0 +1,87 @@
+.introduction-main {
+    padding-top: 8rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #262528;
+    color: #ededed;
+    transition: 0.3s all ease-in-out;
+    height: auto;
+    min-height: 24rem;
+    padding-bottom: 6rem;
+    position: relative;
+    z-index: 1;
+}
+.introduction-main-light {
+    @extend .introduction-main;
+    background-color: #ededed;
+    color: #262528;
+    transition: 0.3s all ease-in-out;
+}
+
+.intro-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ededed;
+}
+
+.intro-text-container-light {
+    @extend .intro-text-container;
+    color: #262528;
+}
+
+.intro-title {
+    background-clip: text;
+    // color: transparent;
+    background-size: 500px 500px;
+    cursor: default;
+    margin-inline: 4rem;
+    font-weight: 700;
+    font-size: 3.5rem;
+
+    // animation: reeed 5s infinite linear;
+}
+
+@keyframes reeed {
+    0% {
+        color: white;
+        background-position: 0 0;
+    }
+    25% {
+        color: #ededed;
+        background-position: 0 100;
+    }
+    50% {
+        color: #a8a8a8;
+        background-position: 100 100;
+    }
+    75% {
+        color: #ededed;
+        background-position: 100 0;
+    }
+    100% {
+        color: white;
+        background-position: 0 0;
+    }
+}
+
+.intro-subtitle {
+    width: 100%;
+    font-weight: 400;
+    font-size: larger;
+    padding-top: 2rem;
+    padding-left: 8rem;
+    overflow: hidden;
+}
+
+.intro-illustration-container {
+    margin-right: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.illustration {
+    width: 100%;
+}

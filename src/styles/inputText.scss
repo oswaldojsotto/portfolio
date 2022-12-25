@@ -1,0 +1,139 @@
+.form_title {
+    text-align: justify;
+    max-width: 20rem;
+    font-size: 1rem;
+}
+
+//-----------------------------------------------------------------------//
+
+.form__group {
+    position: relative;
+    padding: 20px 0 0;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 20rem;
+    max-width: 180px;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.form__field {
+    font-family: inherit;
+    font-weight: 500;
+    width: 20rem;
+    border: none;
+    border-bottom: 2px solid #5c5c5c;
+    outline: 0;
+    font-size: 17px;
+    color: #5c5c5c;
+    padding: 7px 0;
+    background: transparent;
+    -webkit-transition: border-color 0.2s;
+    transition: border-color 0.2s;
+    font-weight: 500;
+}
+
+.form__field-error {
+    @extend .form__field;
+}
+
+.form__field::-webkit-input-placeholder {
+    color: transparent;
+    font-weight: 500;
+}
+
+.form__field::-moz-placeholder {
+    color: transparent;
+    font-weight: 500;
+}
+
+.form__field:-ms-input-placeholder {
+    color: transparent;
+    font-weight: 500;
+}
+
+.form__field::-ms-input-placeholder {
+    color: transparent;
+    font-weight: 500;
+}
+
+.form__field::placeholder {
+    color: transparent;
+    font-weight: 500;
+}
+
+.form__field:-moz-placeholder-shown ~ .form__label {
+    font-size: 17px;
+    cursor: text;
+    font-weight: 500;
+    top: 2rem;
+}
+
+.form__field:-ms-input-placeholder ~ .form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 2rem;
+    font-weight: 500;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+    color: #5c5c5c;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: text;
+    top: 2rem;
+}
+
+.form__label {
+    // CAMPO
+    position: absolute;
+    top: 0;
+    display: block;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    font-size: 17px;
+    font-weight: 500;
+    color: darkred;
+    pointer-events: none;
+}
+
+.form__label_invalid {
+    @extend .form__label;
+    color: darkolivegreen;
+}
+
+.form__field:focus {
+    font-weight: 500;
+    border-width: 2px;
+
+    color: #5c5c5c;
+}
+
+.form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    font-size: 17px;
+}
+
+/* reset input */
+.form__field:required,
+.form__field:invalid {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.name-error {
+    font-size: smaller;
+    width: 20rem;
+    transition: 0.5s all ease-in-out;
+    color: darkred;
+}
+.name-error-valid {
+    font-size: smaller;
+    width: 20rem;
+    transition: 0.5s all ease-in-out;
+    color: transparent;
+}

@@ -1,0 +1,154 @@
+.header-main, .header-main-light {
+  z-index: 2;
+  position: fixed;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 6rem;
+  color: #ededed;
+}
+
+.links-container {
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  color: #5c5c5c;
+  max-height: 6rem;
+}
+
+.logo-container {
+  max-height: 6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  transition: 0.3s all ease-in-out;
+}
+
+.header-logo {
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+}
+
+.header-buttons {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.language-selector {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.language-selector-box {
+  z-index: 2;
+  font-weight: 500;
+  color: #5c5c5c;
+  margin-left: 0rem;
+  margin-right: 1rem;
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+.language-selector-box:hover {
+  cursor: pointer;
+  color: #929292;
+  transition: 0.3s all ease-in-out;
+}
+
+.cta {
+  list-style-type: none;
+  display: flex;
+  margin-top: 0.5rem;
+  border: none;
+  background: none;
+}
+
+.li-item {
+  list-style-type: none;
+}
+
+.cta span {
+  color: #5c5c5c;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding-bottom: 7px;
+  margin-left: 1rem;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  font-weight: 800;
+  transform: scale(1);
+}
+
+.hover-underline-animation {
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 20px;
+  transition: 0.3s all ease-in-out;
+}
+
+.hover-underline-animation:hover {
+  transition: 0.3s all ease-in-out;
+  color: #929292;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #5c5c5c;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color: secondaryDarkColor;
+}
+
+.cta .active {
+  color: #e1a22a;
+  font-weight: 500;
+  transition: 0.3s all ease;
+}
+
+.dd-selector {
+  font-weight: 2rem;
+  width: 2rem;
+}
+
+.language-selector-box {
+  transition: all 2s ease-in-out;
+}
+
+.translate-icon {
+  width: 1.3rem;
+  height: 1.3rem;
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,336 @@
+<meta name="viewport" content="height=device-height, 
+width=device-width, , 
+minimum-scale=1.0, maximum-scale=1.0, 
+user-scalable=no, target-densitydpi=device-dpi"/>
+<style>
+
+*{
+  border: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+body{
+  border: 0;
+  padding: 0;
+}
+
+
+.box-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  justify-content: space-between;
+
+}
+
+.top-row-container{
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.mid-row-container{
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bottom-row-container{
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.notif-temp-1{
+  width: 6rem;
+  height: 6rem;
+  top:0;
+  left:0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  transform: scale(0.9);
+  cursor: pointer;  
+}
+.notif-temp-2{
+  width: 6rem;
+  height: 6rem;
+  top:0;
+  right: 43%;
+  position: fixed;
+  transform: scale(0.9);
+  display: flex;
+  justify-content: center;
+  cursor: pointer;  
+}
+.notif-temp-3{
+  width: 6rem;
+  height: 6rem;
+  top:0;
+  right: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  transform: scale(0.9);
+  cursor: pointer;  
+}
+
+.notif-temp-4{
+  width: 6rem;
+  height: 6rem;
+  top:50%;
+  right: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  transform: scale(0.9);
+  cursor: pointer;  
+}
+
+.notif-temp-5{
+  width: 6rem;
+  height: 6rem;
+  bottom:0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  transform: scale(0.9);
+  cursor: pointer;  
+}
+.notif-temp-6{
+  width: 6rem;
+  height: 6rem;
+  bottom:0;
+  right: 43%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  transform: scale(0.9);
+  cursor: pointer;  
+}
+.notif-temp-7{
+  width: 6rem;
+  height: 6rem;
+  bottom:0;
+  right: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  transform: scale(0.9);
+  cursor: pointer;  
+}
+
+
+.right-img-div {
+  transform: scale(0.8);
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 3px solid purple;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+.notif-img{
+  border-radius: 50%;
+  transform: scale(0.9);
+}
+.right-img-div::after {
+  content: "1";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: red;
+  height: 20px;
+  width: 20px;
+  font-weight: 600;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.temp2-cross{
+  display: none;
+  
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 50%;
+  font-weight: 700;
+  color:#ededed;
+  font-size: larger;
+  height: 1rem;
+  width: 1rem;
+  text-decoration: none;
+  background-color:#171717;
+}
+
+@media (min-width: 768px){
+  notif-temp-2 {
+  font-family: "Inter", sans-serif;
+  transform: scale(0.8);
+}
+}
+
+
+</style>
+
+<!-- temp2 -->
+<div class="box-container">
+  <div class="top-row-container">
+
+    <div class="notif-temp-1">
+      <div class="cross">
+        <a href="https://www.google.com/" onclick="remove('notif-temp-2')" class="temp2-cross">
+          &times;
+        </a>
+      </div>
+    <a href="https://www.google.com/" class="item">
+      <div class="right-img-div">
+        <img
+          class="notif-img"
+          src="https://picsum.photos/80"
+          alt="lorem picsum image"
+        />
+      </div>
+    </a>
+    
+    </div>
+    
+    <div class="notif-temp-2">
+        <div class="cross">
+          <a href="https://www.google.com/" onclick="remove('notif-temp-2')" class="temp2-cross">
+            &times;
+          </a>
+        </div>
+      <a href="https://www.google.com/" class="item">
+        <div class="right-img-div">
+          <img
+            class="notif-img"
+            src="https://picsum.photos/80"
+            alt="lorem picsum image"
+          />
+        </div>
+      </a>
+     
+    </div>
+  
+    <div class="notif-temp-3">
+      <div class="cross">
+        <a href="https://www.google.com/" onclick="remove('notif-temp-2')" class="temp2-cross">
+          &times;
+        </a>
+      </div>
+    <a href="https://www.google.com/" class="item">
+      <div class="right-img-div">
+        <img
+          class="notif-img"
+          src="https://picsum.photos/80"
+          alt="lorem picsum image"
+        />
+      </div>
+    </a>
+    
+    </div>
+  
+  </div>
+
+  <div class="mid-row-container">
+
+    <div class="notif-temp-4">
+      <div class="cross">
+        <a href="https://www.google.com/" onclick="remove('notif-temp-2')" class="temp2-cross">
+          &times;
+        </a>
+      </div>
+    <a href="https://www.google.com/" class="item">
+      <div class="right-img-div">
+        <img
+          class="notif-img"
+          src="https://picsum.photos/80"
+          alt="lorem picsum image"
+        />
+      </div>
+    </a>
+    
+    </div>
+    
+    
+  
+  </div>
+
+  <div class="bottom-row-container">
+
+    <div class="notif-temp-5">
+      <div class="cross">
+        <a href="https://www.google.com/" onclick="remove('notif-temp-2')" class="temp2-cross">
+          &times;
+        </a>
+      </div>
+    <a href="https://www.google.com/" class="item">
+      <div class="right-img-div">
+        <img
+          class="notif-img"
+          src="https://picsum.photos/80"
+          alt="lorem picsum image"
+        />
+      </div>
+    </a>
+    
+    </div>
+    
+    <div class="notif-temp-6">
+        <div class="cross">
+          <a href="https://www.google.com/" onclick="remove('notif-temp-2')" class="temp2-cross">
+            &times;
+          </a>
+        </div>
+      <a href="https://www.google.com/" class="item">
+        <div class="right-img-div">
+          <img
+            class="notif-img"
+            src="https://picsum.photos/80"
+            alt="lorem picsum image"
+          />
+        </div>
+      </a>
+     
+    </div>
+  
+    <div class="notif-temp-7">
+      <div class="cross">
+        <a href="https://www.google.com/" onclick="remove('notif-temp-2')" class="temp2-cross">
+          &times;
+        </a>
+      </div>
+    <a href="https://www.google.com/" class="item">
+      <div class="right-img-div">
+        <img
+          class="notif-img"
+          src="https://picsum.photos/80"
+          alt="lorem picsum image"
+        />
+      </div>
+    </a>
+    
+    </div>
+  
+  </div>
+
+</div> 
+
+
+<!-- temp2 -->

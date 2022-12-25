@@ -1,0 +1,142 @@
+* {
+  margin-top: 6rem;
+  margin: 0;
+  padding: 0;
+}
+
+.project-main {
+  overflow: hidden;
+  background-color: #262528;
+  color: #ededed;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+}
+
+.project-main-dark {
+  overflow: hidden;
+  background-color: #ededed;
+  color: #262528;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+}
+
+.pdetails-info-container {
+  gap: 1rem;
+  margin: auto;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.pdetails-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.pdetails-link {
+  margin-block: 0rem;
+  color: goldenrod;
+}
+
+.pdetails-image-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.pdetails-img {
+  height: auto;
+  max-height: 25rem;
+  width: 70%;
+  max-width: 25rem;
+}
+
+.pdetails-button {
+  z-index: 0;
+  margin-top: 1rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 767px) {
+  .project-main {
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    margin: auto;
+  }
+  .project-main-dark {
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    margin: auto;
+  }
+  .pdetails-info-container {
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .pdetails-title {
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+    max-height: 25rem;
+    width: 70%;
+    max-width: 25rem;
+  }
+  .pdetails-subtitle {
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+    max-height: 25rem;
+    width: 70%;
+    max-width: 25rem;
+  }
+  .pdetails-link {
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+    max-height: 25rem;
+    width: 70%;
+    max-width: 25rem;
+  }
+  .pdetails-button {
+    margin-right: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+    max-height: 25rem;
+    width: 70%;
+    max-width: 25rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .pdetails-title {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=projectDetails.css.map */

@@ -1,0 +1,24 @@
+.section-separator {
+    background-color: transparent;
+    padding-bottom: 1rem;
+    overflow: hidden;
+    color: #454545;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.section-separator-text {
+    width: 8rem;
+    font-weight: 800;
+    margin-inline: 2rem;
+}
+.section-separator-line {
+    border: 0.01rem solid #454545;
+    margin-inline: 5rem;
+    width: auto;
+}

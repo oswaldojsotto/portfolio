@@ -1,0 +1,99 @@
+//button variables
+$button-background: transparent;
+$button-fontcolor: #5c5c5c;
+$button-arrow-color: #5c5c5c;
+//item variables
+$box-background-color: #fdedd8;
+$item-fontcolor: #171717;
+//hover
+$hover-font-color: #ededed;
+$hover-background-color: darkgoldenrod;
+
+.language-button {
+    -webkit-appearance: button;
+    appearance: button;
+    background: $button-background;
+    color: $button-fontcolor;
+    border: none;
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    width: 6rem;
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0.5rem;
+    height: 2rem;
+}
+
+.language-button:hover {
+    transition: all 0.3s ease-in-out;
+    color: #a6a6a6;
+    path {
+        transition: all 0.3s ease-in-out;
+        fill: #a6a6a6;
+    }
+}
+.language-button-dark {
+    @extend .language-button;
+}
+.language-button-dark:hover {
+    path {
+        transition: all 0.3s ease-in-out;
+        fill: #a6a6a6;
+    }
+}
+
+.language-button path {
+    z-index: 4;
+    fill: $button-arrow-color;
+}
+
+.motion-language-items {
+    z-index: 2;
+    padding-top: 0.79rem;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    height: 1rem;
+    justify-content: flex-start;
+}
+
+.language-box {
+    margin-top: 9rem;
+    width: 6rem;
+    background-color: $box-background-color;
+}
+.language-box-dark {
+    @extend .language-box;
+    background-color: #5c5c5c;
+}
+
+.lang-box-item {
+    padding: 0.6rem;
+    color: $item-fontcolor;
+}
+
+.lang-box-item-dark {
+    @extend .lang-box-item;
+    color: #ededed;
+}
+
+.lang-box-item:hover {
+    font-weight: 500;
+    transition: all 0.1s ease-in-out;
+    color: $hover-font-color;
+    background-color: $hover-background-color;
+    cursor: pointer;
+}
+
+.lang-box-item-dark:hover {
+    font-weight: 500;
+    transition: all 0.1s ease-in-out;
+    color: #ededed;
+    background-color: goldenrod;
+    cursor: pointer;
+}

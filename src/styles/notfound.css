@@ -1,0 +1,15 @@
+.not-found-main, .not-found-main-dark {
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #ededed;
+  color: #262528;
+}
+
+.not-found-main-dark {
+  background-color: #262528;
+  color: #ededed;
+}/*# sourceMappingURL=notfound.css.map */
