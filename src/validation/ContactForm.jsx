@@ -62,7 +62,6 @@ const ContactForm = () => {
         )
         .then(
           result => {
-            console.log(result.text);
             nameRef.current.value = "";
             emailRef.current.value = "";
             messageRef.current.value = "";
@@ -81,7 +80,6 @@ const ContactForm = () => {
     } else {
       //acciones a ejecutar cuando todo sea INcorrecto-------------------------
 
-      console.log("llena los campos correctamente");
       setNameClicked(true);
       setEmailClicked(true);
       setMessageClicked(true);
@@ -227,26 +225,3 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-
-// const sendEmail = e => {
-//   e.preventDefault();
-
-//   emailjs
-//     .sendForm(
-//       "service_q4j1941",
-//       "template_3yh8rzn",
-//       form.current,
-//       "aouyRvJaDUT94UrQh"
-//     )
-//     .then(
-//       result => {
-//         console.log(result.text);
-//         nameRef.current.value = "";
-//         emailRef.current.value = "";
-//         messageRef.current.value = "";
-//       },
-//       error => {
-//         console.log(error.text);
-//       }
-//     );
-// };

@@ -1,7 +1,7 @@
 export const bioData = [
   {
     language: "english",
-    bio: "My name is Oswaldo Soto. I currently live in Capital District, Venezuela, and I am mostly a self-taught developer.",
+    bio: "My name is Oswaldo Soto. I currently live in Capital District, Venezuela.  I'm a frontend developer.",
     text1:
       "Programming has been my main focus for many years, specifically the frontend development. Create and bring ideas to life is what I like the most.",
     text2:
@@ -12,7 +12,7 @@ export const bioData = [
   },
   {
     language: "spanish",
-    bio: "Mi nombre es Oswaldo Soto. Actualmente vivo en Caracas, Venezuela, y soy mayormente desarrollador autodidacta.",
+    bio: "Mi nombre es Oswaldo Soto. Actualmente vivo en Caracas, Venezuela. Soy desarrollador frontend.",
     text1:
       "Programar ha sido mi meta por muchos años, específicamente el desarrollo frontend. Crear y traer ideas a la realidad es lo que más me gusta. ",
     text2:
@@ -23,7 +23,7 @@ export const bioData = [
   },
   {
     language: "italian",
-    bio: "Il mio nome è Oswaldo Soto, Attualmente vivo in Caracas, Venezuela, sono uno sviluppatore autodidatta. ",
+    bio: "Il mio nome è Oswaldo Soto, Attualmente vivo in Caracas, Venezuela, sono uno sviluppatore frontend. ",
     text1:
       "La programmazione è stata il mio obiettivo principale per molti anni, sopratutto lo sviluppo frontend. Creare è portare idee a la vita, è quello que mi piace di più. ",
     text2:

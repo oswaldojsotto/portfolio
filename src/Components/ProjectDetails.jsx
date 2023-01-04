@@ -34,10 +34,7 @@ const ProjectDetails = () => {
         transition={{ duration: 0.4 }}>
         <p className="pdetails-title">{data[0].title} </p>
         <p className="pdetails-subtitle">{projectDetailTranslation()}</p>
-
-        {/* <a className="pdetails-link" href={data[0].link} target="_blank">
-          {visitProject()}
-        </a> */}
+        <p className="pdetails-description"> {data[0].description}</p>
 
         <a href={data[0].link} target="_blank" className="pdetails-button">
           <button type="button" className="btn cube cube-hover">

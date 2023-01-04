@@ -38,6 +38,10 @@
     font-size: 2.5rem;
     font-weight: 700;
 }
+.pdetails-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
 
 .pdetails-link {
     margin-block: 0rem;
@@ -52,6 +56,12 @@
 
     justify-content: center;
     align-items: center;
+}
+
+.pdetails-description {
+    width: 80%;
+    text-align: right;
+    margin-left: 2rem;
 }
 
 .pdetails-img {
@@ -121,6 +131,16 @@
         width: 70%;
         max-width: 25rem;
     }
+
+    .pdetails-description {
+        display: flex;
+        justify-content: flex-end;
+        height: auto;
+        max-height: 25rem;
+        width: 70%;
+        margin-right: 2rem;
+        max-width: 25rem;
+    }
     .pdetails-link {
         display: flex;
         justify-content: flex-end;
@@ -143,5 +163,8 @@
 @media only screen and (max-width: 480px) {
     .pdetails-title {
         font-size: 1.5rem;
+    }
+    .pdetails-subtitle {
+        font-size: 1.1rem;
     }
 }

@@ -1,9 +1,14 @@
+html {
+  height: -webkit-fill-available;
+}
+
 .contact-main, .contact-main-dark {
   cursor: default;
   background-color: #262528;
   color: #ededed;
   height: 100vh;
   width: 100%;
+  scrollbar-width: 1px;
 }
 
 .contact-main-dark {
@@ -18,6 +23,7 @@
 }
 
 .contact-aboutme-container {
+  scrollbar-width: none;
   z-index: 1;
   color: #ededed;
   position: relative;
@@ -29,6 +35,7 @@
 
 .contact-contact-container, .contact-contact-container-dark {
   position: absolute;
+  scrollbar-width: none;
   width: 100%;
   background-color: #262528;
   position: fixed;

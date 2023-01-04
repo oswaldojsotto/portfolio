@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 import { projectDetailTranslation } from "../hooks/GeneralTraductions";
 
-const ProjectCard = ({ title, subtitle, image }) => {
+const ProjectCard = ({ title, image }) => {
   const { ref, inView } = useInView({ threshold: 0.2 });
   const animation = useAnimation();
 
@@ -24,7 +24,7 @@ const ProjectCard = ({ title, subtitle, image }) => {
     }
 
     if (!inView) {
-      animation.start({ x: "-3rem", opacity: 0 });
+      animation.start({ x: "-3rem", opacity: 1 });
     }
   }, [inView]);
 
@@ -33,8 +33,8 @@ const ProjectCard = ({ title, subtitle, image }) => {
       <Link to={`/project/${title}`}>
         <motion.div
           className="project-image-container"
-          whileHover={{ scale: [null, 1.2, 1.15] }}
-          transition={{ duration: 0.3 }}>
+          whileHover={{ scale: [null, 1.08, 1.05] }}
+          transition={{ duration: 0.5 }}>
           <img className="project-image" src={image}></img>
         </motion.div>
       </Link>

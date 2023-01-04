@@ -158,11 +158,9 @@ $tertiaryDarkColor: #454545;
 //----------------------------------------------Projects container section................//
 
 .projects-container {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-self: center;
+    margin: auto;
     transition: 0.3s all ease-in-out;
 }

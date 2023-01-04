@@ -53,46 +53,91 @@ const TechMarquee = () => {
           gradient={false}
           speed={20}
           className={theme ? "marquee-dark" : "marquee"}>
-          <FontAwesomeIcon
-            icon={faHtml5}
-            className={theme ? "logo-dark" : "logo-light"}
-          />
-          <FontAwesomeIcon
-            icon={faCss3Alt}
-            className={theme ? "logo-dark" : "logo-light"}
-          />
-          <FontAwesomeIcon
-            icon={faJs}
-            className={theme ? "logo-dark" : "logo-light"}
-          />
-          <FontAwesomeIcon
-            icon={faReact}
-            className={theme ? "logo-dark" : "logo-light"}
-          />
-          <img
-            src={theme ? typescriptdark : typescript}
-            className={theme ? "logo-dark" : "logo-light"}></img>
-          <img
-            src={theme ? reduxdark : redux}
-            className={theme ? "logo-dark" : "logo-light"}></img>
-          <FontAwesomeIcon
-            icon={faGitAlt}
-            className={theme ? "logo-dark" : "logo-light"}
-          />
-          <FontAwesomeIcon
-            icon={faGithub}
-            className={theme ? "logo-dark" : "logo-light"}
-          />
-          <FontAwesomeIcon
-            icon={faSass}
-            className={theme ? "logo-dark" : "logo-light"}
-          />
-          <img
-            src={theme ? tailwinddark : tailwindlight}
-            className={theme ? "logo-dark" : "logo-light"}></img>
-          <img
-            src={theme ? muidark : muilight}
-            className={theme ? "logo-dark" : "logo-light"}></img>
+          <div className="mark-container">
+            <p className="tooltip">HTML5</p>
+            <FontAwesomeIcon
+              icon={faHtml5}
+              className={theme ? "logo-dark" : "logo-light"}
+            />
+          </div>
+
+          <div className="mark-container">
+            <p className="tooltip">CSS3</p>
+            <FontAwesomeIcon
+              icon={faCss3Alt}
+              className={theme ? "logo-dark" : "logo-light"}
+            />
+          </div>
+
+          <div className="mark-container">
+            <label htmlFor="faHtml5" className="tooltip">
+              Javascript
+            </label>
+            <FontAwesomeIcon
+              icon={faJs}
+              className={theme ? "logo-dark" : "logo-light"}
+            />
+          </div>
+
+          <div className="mark-container">
+            <p className="tooltip">React</p>
+            <FontAwesomeIcon
+              icon={faReact}
+              className={theme ? "logo-dark" : "logo-light"}
+            />
+          </div>
+
+          <div className="mark-container">
+            <p className="tooltip">Typescript</p>
+            <img
+              src={theme ? typescriptdark : typescript}
+              className={theme ? "logo-dark" : "logo-light"}></img>
+          </div>
+
+          <div className="mark-container">
+            <p className="tooltip">Redux</p>
+            <img
+              src={theme ? reduxdark : redux}
+              className={theme ? "logo-dark" : "logo-light"}></img>
+          </div>
+          <div className="mark-container">
+            <p className="tooltip">Git</p>
+            <FontAwesomeIcon
+              icon={faGitAlt}
+              className={theme ? "logo-dark" : "logo-light"}
+            />
+          </div>
+
+          <div className="mark-container">
+            <p className="tooltip">Github</p>
+            <FontAwesomeIcon
+              icon={faGithub}
+              className={theme ? "logo-dark" : "logo-light"}
+            />
+          </div>
+
+          <div className="mark-container">
+            <p className="tooltip">Sass</p>
+            <FontAwesomeIcon
+              icon={faSass}
+              className={theme ? "logo-dark" : "logo-light"}
+            />
+          </div>
+
+          <div className="mark-container">
+            <p className="tooltip">Tailwind Css</p>
+
+            <img
+              src={theme ? tailwinddark : tailwindlight}
+              className={theme ? "logo-dark" : "logo-light"}></img>
+          </div>
+
+          <div className="mark-container">
+            <p className="tooltip">Material UI</p>
+            <img
+              src={theme ? muidark : muilight}
+              className={theme ? "logo-dark" : "logo-light"}></img>
+          </div>
         </Marquee>
       </motion.div>
     </>

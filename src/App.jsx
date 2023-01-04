@@ -3,7 +3,7 @@ import Header from "./Components/Header";
 import { Body } from "./Body";
 import ProjectDetails from "./Components/ProjectDetails";
 import Footer from "./Components/Footer";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./Helpers/ScrollToTop";
 import NotFound from "./Components/NotFound";
 import "./styles/main.css";
@@ -36,7 +36,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <ScrollToTop />
         <Header references={references} />
         <Routes>
@@ -45,7 +45,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer references={references} />
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
