@@ -22,6 +22,7 @@ const ProjectDetails = () => {
     dispatch(switchBurger(false));
   };
 
+  ["0", "O"];
   return (
     <div
       className={theme ? "project-main-dark" : "project-main"}

@@ -7,9 +7,7 @@ const Footer = ({ references }) => {
   return (
     <div className="footer-main">
       <div className="footer-links-container">
-        <a
-          href="https://www.linkedin.com/in/oswaldo-soto-8643ba23a/"
-          target="_blank">
+        <a href="https://www.linkedin.com/in/oswaldojsotto/" target="_blank">
           {" "}
           <FontAwesomeIcon icon={faLinkedinIn} className="footer-link" />
         </a>
