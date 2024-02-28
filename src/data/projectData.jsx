@@ -2,17 +2,19 @@ import image1 from "/projects/shop2.png";
 import image2 from "/projects/movie2.png";
 import image3 from "/projects/note2.png";
 import image4 from "/projects/newsproject.png";
+import image5 from "/projects/picture5.png";
 
 export const projectData = [
   {
-    title: "NewsApp",
+    title: "Next Authentication App",
     subtitle: "Develop & Design",
-    image: image4,
-    link: "https://ostechnews.vercel.app/",
+    image: image5,
+    link: "https://www.next-authorization.xyz/",
     description:
-      "Small app to test the new Next.js 13 features such as the new app folder router feature, new SSR and CSR components.",
-    tools: "Next.js 13 experimental build, Tailwind CSS",
+      "Key Features: Next-auth v5, 🚀 Next.js 14 with server actions, 🔑 Credentials Provider, 🌐 OAuth Provider (Social login with Google & GitHub), 🔒 Forgot password functionality, ✉️ Email verification, 📱 Two factor verification (2FA), 👥 User roles (Admin & User)",
+    tools: "",
   },
+
   {
     title: "SHOP",
     subtitle: "Develop & Design",
@@ -38,5 +40,14 @@ export const projectData = [
     description:
       "Small app to showcase a Create-Read-Update-Delete app using notes and descriptions",
     tools: "React.js",
+  },
+  {
+    title: "NewsApp",
+    subtitle: "Develop & Design",
+    image: image4,
+    link: "https://ostechnews.vercel.app/",
+    description:
+      "Small app to test the new Next.js 13 features such as the new app folder router feature, new SSR and CSR components.",
+    tools: "Next.js 13 experimental build, Tailwind CSS",
   },
 ];

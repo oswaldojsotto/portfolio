@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { switchBurger } from "../redux/burgerSlice";
 import { closeMenu } from "../redux/menuControlSlice";

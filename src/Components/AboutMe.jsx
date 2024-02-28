@@ -1,12 +1,11 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import AboutTextAnimation from "../Helpers/AboutTextAnimation";
-import TechMarquee from "./TechMarquee";
-import photo from "/work_2.png";
 import { motion } from "framer-motion";
 import { switchBurger } from "../redux/burgerSlice";
 import { useDispatch } from "react-redux";
 import { closeMenu } from "../redux/menuControlSlice";
+import TechMarquee from "./TechMarquee";
+import AboutTextAnimation from "../Helpers/AboutTextAnimation";
 import {
   titleText,
   bio,
@@ -15,6 +14,7 @@ import {
   bioTextThree,
   bioTextFour,
 } from "../hooks/GeneralTraductions";
+import photo from "/work_2.png";
 
 const AboutMe = () => {
   const dispatch = useDispatch();
