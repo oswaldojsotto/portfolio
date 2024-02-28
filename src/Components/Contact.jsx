@@ -39,12 +39,11 @@ const Contact = () => {
             <div className="left-side-container">
               <div className="animation-container">
                 <TypeAnimation
-                  // Same String at the start will only be typed once, initially
                   sequence={["Hello!", 6000, "Ciao!", 6000, "Hola!", 6000]}
-                  speed={1} // Custom Speed from 1-99 - Default Speed: 40
+                  speed={1}
                   style={{ fontSize: "6rem" }}
-                  wrapper="span" // Animation will be rendered as a <span>
-                  repeat={Infinity} // Repeat this Animation Sequence infinitely
+                  wrapper="span"
+                  repeat={Infinity}
                 />
               </div>
 
